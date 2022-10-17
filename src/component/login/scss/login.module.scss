@@ -1,0 +1,231 @@
+.parent{
+    display: flex;
+}
+.brandParent{
+    background-color: #fafafa;  
+    height: 100vh;
+
+    display: inline-grid;
+    width: 50%;
+    padding-left: 6em;
+}
+.logo{
+    margin-top: 3em;
+}
+.iconBg{
+    // height: 700px;
+    // width: 700px;
+}
+
+.formparent{
+    width: 50%;
+    background: white;
+    height: 100vh;
+    align-content: center;
+    display: inline-grid;
+    padding: 0em 7em;
+}
+.a{
+    margin-top: 2em;
+    align-items: center;
+    padding-left: 0.8em;
+    width: 100%;
+    padding-right: 1em;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    height: 45px;
+    display: flex;
+   
+}
+.inputTwo{
+    border: none;
+    width: 100%;
+}
+.show{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;    
+    color: #39CDCC
+}
+.btn{
+    background: #39CDCC;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2em;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;   
+}
+.forgot{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #39CDCC;   
+    margin-top: 2em;
+}
+.welcome{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 55px;
+    letter-spacing: -0.04em;   
+    color: #213F7D;
+}
+.enter{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 27px;
+    color: #545F7D;
+    padding-top: 1em;
+}
+.nameDiv{
+    margin-top: 5em;
+} 
+.input{
+    padding-left: 0.8em;
+    width: 100%;
+    padding-right: 1em;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    height: 45px;
+   
+}
+
+.forgotpassword{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: 18px;
+    color: #0D2565;  
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+.button{
+    height: 45px;
+    background: #2DCE5A;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.sigupparent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+}
+.signuptext{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 17px;
+    color: #03014C;    
+    cursor: pointer;
+}
+
+.plaformparent{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+}
+.error{
+    color: tomato;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#input:-webkit-autofill{
+    -webkit-text-fill-color: yellow !important;
+}
+
+
+/* \\ MEDIA QUERIES \\ */
+@media screen and (max-width: 1420px) {
+    .iconBg{
+        width: 500px;
+    }
+    .brandParent {
+        background-color: #fafafa;
+        height: 100vh;
+        display: inline-grid;
+        width: 50%;
+        padding: 0em 3em;
+    }
+    .formparent {
+        width: 50%;
+        background: white;
+        height: 100vh;
+        align-content: center;
+        display: inline-grid;
+        padding: 0em 3em;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .iconBg{
+        width: 450px;
+    }
+    .brandParent {
+        background-color: #fafafa;
+        height: 100vh;
+        display: inline-grid;
+        width: 50%;
+        padding: 0em 3em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .iconBg{
+        width: 400px;
+    }
+    .brandParent {
+        background-color: #fafafa;
+        height: 100vh;
+        display: inline-grid;
+        width: 50%;
+        padding: 0em 3em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .iconBg{
+        width: 400px;
+    }
+    .brandParent {
+        background-color: #fafafa;
+        height: 100vh;
+        display: none;
+        width: 50%;
+        padding: 0em 3em;
+
+    }
+    .formparent{
+        width: 100%;
+    }
+}

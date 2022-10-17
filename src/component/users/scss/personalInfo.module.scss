@@ -1,0 +1,304 @@
+.parent{
+    margin-top: 3em;
+    background-color: white;
+    height: 250px;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px; 
+    padding: 2em 0em;
+}
+.avatarRow{
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+}
+.nameDiv{
+    padding-left: 1em;
+}
+.name{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 26px;
+    color: #213F7D;    
+}
+.code{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 16px;  
+    color: #545F7D;  
+    padding-top: 1.3em; 
+}
+.icon{
+    height: 130px;
+    width: 130px;
+}
+.lines{
+    height: 100px;
+    margin-left: 3em;
+    opacity: 0.2;
+    border: 1px solid #545F7D;   
+}
+.userTier{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 16px; 
+    color: #545F7D; 
+    margin-top: 0.5em;  
+}
+.bank{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 14px; 
+    color: #213F7D;
+    padding-top: 1.3em; 
+}
+.tabParent{
+    margin-top: 2.4em;
+}
+.tab{
+    width: 16.6%;
+}
+@media screen and (max-width: 1380px) {
+    .parent{
+       margin-top: 1.9em;
+      
+    }
+}
+@media screen and (max-width: 1379px) {
+    .tabParent{
+        margin-top: 1.9em;
+    }
+}
+@media screen and (max-width: 1379px) {
+    .parent{
+        height: 225px;
+    }
+    .tabParent{
+        margin-top: 2em;
+    }
+    .name{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 26px;
+        color: #213F7D;    
+    }
+    .code{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.78em;
+        line-height: 16px;  
+        color: #545F7D;  
+        padding-top: 1.3em; 
+    }
+    .icon{
+        height: 100px;
+        width: 100px;
+    }
+    .lines{
+        height: 100px;
+        margin-left: 2em;
+        opacity: 0.2;
+        border: 1px solid #545F7D;   
+    }
+    .userTier{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.89em;
+        line-height: 16px; 
+        color: #545F7D; 
+        margin-top: 0.5em;  
+    }
+    .bank{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 14px; 
+        color: #213F7D;
+        padding-top: 1.3em; 
+    }
+}
+@media screen and (max-width: 780px) {
+    .parent{
+        height: 210px;
+        padding: 1.9em 0em;
+    }
+    .tabParent{
+        margin-top: 1em;
+    }
+    .name{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 26px;
+        color: #213F7D;    
+    }
+    .code{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.68em;
+        line-height: 16px;  
+        color: #545F7D;  
+        padding-top: 1.3em; 
+    }
+    .icon{
+        height: 80px;
+        width: 80px;
+    }
+    .lines{
+        height: 100px;
+        margin-left: 1.5em;
+        opacity: 0.2;
+        border: 1px solid #545F7D;   
+    }
+    .userTier{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.89em;
+        line-height: 16px; 
+        color: #545F7D; 
+        margin-top: 0.5em;  
+    }
+    .bank{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 14px; 
+        color: #213F7D;
+        padding-top: 1.3em; 
+    }
+}
+@media screen and (max-width: 744px) {
+    .parent{
+        height: 210px;
+        padding: 1.1em 0em;
+    }
+    .tabParent{
+        margin-top: 1em;
+    }
+    .avatarRow{
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+    }
+    .name{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 26px;
+        color: #213F7D;    
+    }
+    .code{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.68em;
+        line-height: 16px;  
+        color: #545F7D;  
+        padding-top: 1.3em; 
+    }
+    .icon{
+        height: 80px;
+        width: 80px;
+    }
+    .lines{
+        height: 100px;
+        margin-left: 1.5em;
+        opacity: 0.2;
+        border: 1px solid #545F7D;   
+    }
+    .userTier{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.89em;
+        line-height: 16px; 
+        color: #545F7D; 
+        margin-top: 0.5em;  
+    }
+    .bank{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 14px; 
+        color: #213F7D;
+        padding-top: 1.3em; 
+    }
+}
+@media screen and (max-width: 660px) {
+    .parent{
+        height: 192px;
+        padding: 1.1em 0em;
+    }
+    .tabParent{
+        margin-top: 1em;
+    }
+    .avatarRow{
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+    }
+    .name{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 26px;
+        color: #213F7D;    
+    }
+    .code{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.68em;
+        line-height: 16px;  
+        color: #545F7D;  
+        padding-top: 1.3em; 
+    }
+    .icon{
+        height: 70px;
+        width: 70px;
+    }
+    .lines{
+        height: 80px;
+        margin-left: 1em;
+        opacity: 0.2;
+        border: 1px solid #545F7D;   
+    }
+    .userTier{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.89em;
+        line-height: 16px; 
+        color: #545F7D; 
+        margin-top: 0.5em;  
+    }
+    .bank{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 14px; 
+        color: #213F7D;
+        padding-top: 1.3em; 
+    }
+}

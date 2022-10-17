@@ -1,0 +1,70 @@
+.parent{
+    background-color: white;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px; 
+    padding: 0em 2em;
+    margin: 2em 0; 
+   
+}
+.title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 19px;
+    color: #213F7D;   
+    margin-top: 2em;     
+}
+.personalDiv{
+    display: flex;
+    margin-top: 2em;    
+}
+.box{
+    width: 20%;
+}
+.subTitle{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 14px;
+    text-transform: uppercase;    
+    color: #545F7D;   
+}
+.value{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 39px;
+    color: #545F7D;
+}
+.secondInfo{
+    margin-top: 2em;
+}
+.line{
+    width: 100%;
+    opacity: 0.1;
+    margin-top: 1.5em;
+    border-top: 0.5px solid blue;
+}
+@media screen and (max-width: 1300px) {
+    .subTitle{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85em;
+    line-height: 14px;
+    text-transform: uppercase;    
+    color: #545F7D;   
+}
+.value{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 39px;
+    color: #545F7D;
+}
+}

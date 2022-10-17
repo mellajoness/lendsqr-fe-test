@@ -1,0 +1,62 @@
+.parent{
+    margin: 3em 3em;
+ }
+.backRow{
+    display: flex;
+    cursor: pointer;
+}
+.back{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 19px;
+    color: #545F7D;
+    padding-left: 1em;
+}
+.users{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 28px; 
+    color: #213F7D;
+    padding-bottom: 0.6em;
+ }
+ .buttonRow{
+    display: flex;
+    padding-top: 3em;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .blacklistBtn{
+    border: 1px solid #E4033B;
+    border-radius: 8px;
+    color:#E4033B;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0em 0.7em;
+    margin-right: 3em;
+ }
+ .activateBtn{
+    border: 1px solid #39CDCC;
+    border-radius: 8px;
+    color:#39CDCC;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0em 0.7em;
+ }
