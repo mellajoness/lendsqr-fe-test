@@ -17,7 +17,7 @@
     color:#39CDCC;
   }
 .pageName{
-    font-size:1.4em;
+    font-size:1.1em;
     padding-left: 1em; 
     font-family: 'Work Sans';
     font-style: normal;
@@ -26,7 +26,7 @@
     color: #213F7D;
 }
 .title{
-    font-size:1.1em;
+    font-size:0.8em;
     padding-left: 2em; 
     font-family: 'Work Sans';
     font-style: normal;
@@ -37,8 +37,8 @@
     margin-bottom: 1em;
 }
 .icon{
-   height: 25px;
-   width: 25px;
+   height: 20px;
+   width: 20px;
 }
 .iconArrow{
    height: 18px;
@@ -53,7 +53,7 @@
     padding-left: 2em;
 }
 .switch{
-    font-size:1.4em;
+    font-size:1.1em;
     padding-left: 1em; 
     font-family: 'Work Sans';
     font-style: normal;
@@ -74,9 +74,19 @@
     overflow:scroll
 
 }
+
 @media screen and (max-width: 997px) {
     .main{
       width:100%
+    }
+    .pageName{
+        font-size:1.1em;
+        padding-left: 1em; 
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: #213F7D;
     }
 }
 @media screen and (max-width: 1000px) {

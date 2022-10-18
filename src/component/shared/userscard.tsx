@@ -8,7 +8,7 @@ const UserCard = () => {
         <div className={styles.parent}>
            <div className={styles.card}>
              <div className={styles.cardcontent}>
-               <img src={UserCount} className={styles.icon} alt="horse" />
+               <img src={UserCount} className={styles.icon} alt="horse"/>
                <div className={styles.user}>Users</div>
                <div className={styles.count}>2,453</div>
              </div>

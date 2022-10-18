@@ -1,5 +1,5 @@
 .parent{
-    height: 100px;
+    height: 90px;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
     width: 100%;
     display: flex
@@ -20,14 +20,14 @@
 }
 .input{
     padding-left: 0.8em;
-    width:400px;
+    width:300px;
     padding-right: 1em;
     background: #FFFFFF;
     border: 2px solid rgba(84, 95, 125, 0.15);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     height: 45px;
-   
+    font-size: 0.8em;
 }
 .searchDiv{
     display: flex;
@@ -35,8 +35,7 @@
     
 }
 .iconSearch{
-    height: 20px;
-    width: 20px;
+    width: 15px;
     align-self: center;
 }
 .imgSearch{
@@ -53,7 +52,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 19px;
     text-decoration-line: underline;   
     color: #213F7D;
@@ -63,7 +62,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 19px;
     text-decoration-line: underline;   
     color: #213F7D;
@@ -75,8 +74,8 @@
     margin-right: 1.5em;
 }
 .profileIcon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
     margin-right: 1.5em;
 }

@@ -11,7 +11,7 @@ const Header = () => {
     return ( 
         <div className={styles.parent}>
             <div className={styles.logoDiv}>
-             <LendsqrIcon  className={styles.logo} height="35" />{" "}
+             <LendsqrIcon  className={styles.logo} height="25" />{" "}
             </div>
 
             <div className={styles.content}>
@@ -25,7 +25,7 @@ const Header = () => {
                  <div><img src={Bell} className={styles.bellIcon} alt="horse" /></div>
                  <div><img src={Profile} className={styles.profileIcon} alt="horse" /></div>
                  <div className={styles.name}>Adedeji</div>
-                 <div><img src={DropDown} className={styles.iconSearch} alt="horse" /></div>
+                 <div><img src={DropDown} className={styles.iconSearch} alt="horse" height="20" /></div>
               </div>  
             </div>
               

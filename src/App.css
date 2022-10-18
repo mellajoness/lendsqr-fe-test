@@ -38,6 +38,9 @@ select:-webkit-autofill:focus {
   border: 3px solid #b6b7b9;
 } */
 
+MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #d21932;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
