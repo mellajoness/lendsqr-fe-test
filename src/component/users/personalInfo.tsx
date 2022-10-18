@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import { useEffect, useState } from 'react';
 import InfoDetails from './infoDetail';
 import { GET_SERVICE } from '../../services/backend';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -92,6 +93,16 @@ const PersonalInfo = () => {
     const handleRating = (rate: number) => {
       setRating(rate)
     }
+
+    const theme = createTheme({
+      typography: {
+        // In Chinese and Japanese the characters are usually larger,
+        // so a smaller fontsize may be appropriate.
+        fontSize: 11,
+       
+      },
+    });
+    
     
     const onPointerEnter = () => console.log('Enter')
     const onPointerLeave = () => console.log('Leave')
@@ -129,6 +140,7 @@ const PersonalInfo = () => {
               <div className={styles.lines}/>
             </div>
 
+            <ThemeProvider theme={theme}>
             <Box sx={{ width: '100%' }} className={styles.tabParent}>
              <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
              <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"  variant="scrollable" scrollButtons="auto" TabIndicatorProps={{style: {backgroundColor: "#39CDCC",textColor:'secondary'}  }}>
@@ -158,7 +170,8 @@ const PersonalInfo = () => {
              <TabPanel value={value} index={5}>
                 Item six
              </TabPanel>
-            </Box>      
+            </Box>   
+            </ThemeProvider>   
         </div>
 
 
