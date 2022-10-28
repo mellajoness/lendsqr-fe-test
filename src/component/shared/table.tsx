@@ -46,17 +46,27 @@ const Table = () => {
       {id:3, year:'50'},
     ])
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+    const [anchorE2, setAnchorE2] = useState<HTMLButtonElement | null>(null);
 
   const handleClick = (event:any) => {
     setAnchorEl(event.currentTarget);
+  };
+  const handleClickModal = (event:any) => {
+    setAnchorE2(event.currentTarget);
   };
 
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const handleClose2 = () => {
+    setAnchorE2(null);
+  };
 
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
+
+  const open2 = Boolean(anchorE2);
+  const id2 = open2 ? 'simple-popover' : undefined;
    
     useEffect(()=>{
         getUsers()
@@ -175,24 +185,40 @@ const Table = () => {
              <td className={styles.tabledata}>{moment(user.createdAt).format('D MMM YYYY')}</td> 
              <td className={styles.tabledata}><span className={styles.status}>active</span></td>
              <td className={styles.tabledata}>
-                <div className={dropstyles.dropdown}>
-                <img className={dropstyles.dropbtn}  src={ThreeDot} style={{float:'right',paddingTop:'12px',cursor:'pointer'}}/>
-                <div className={dropstyles.dropdownContent}>
-                 <a onClick={()=>viewDetails(user)} style={{display:'flex',alignItems:'center',padding:'1em'}}>
+                <div className={dropstyles.dropdownnnn}>
+                <img className={dropstyles.dropbtnttt}   onClick={handleClickModal} src={ThreeDot} style={{float:'right',paddingTop:'12px',cursor:'pointer'}}/>
+                <Popover
+        id={id2}
+        open={open2}
+        anchorEl={anchorE2}
+        onClose={handleClose2}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+      <Typography sx={{ p: 2 }}>
+        <div className={styles.popoverTwo}>
+            <div className={dropstyles.dropdownContentvvv}>
+                 <a onClick={()=>viewDetails(user)} style={{display:'flex',alignItems:'center',padding:'0.6em',cursor:'pointer'}}>
                     <img src={View} style={{height:'17px'}}/>
                     <div style={{paddingLeft:'1em',color:'#218359'}}>View Details</div>
                  </a>
 
-                 <a style={{display:'flex',alignItems:'center',padding:'1em'}}>
+                 <a style={{display:'flex',alignItems:'center',padding:'1em',cursor:'pointer'}}>
                     <img src={Blacklist} style={{height:'17px'}}/>
                     <div style={{paddingLeft:'1em',color:'#218359'}}>Blacklist User</div>
                  </a>
 
-                 <a style={{display:'flex',alignItems:'center',padding:'1em'}}>
+                 <a style={{display:'flex',alignItems:'center',padding:'1em',cursor:'pointer'}}>
                     <img src={Activate} style={{height:'20px'}}/>
                     <div style={{paddingLeft:'1em',color:'#218359'}}>Activate User</div>
                  </a>
-                </div>
+            </div>
+        </div>
+
+      </Typography>
+      </Popover>  
                 </div>           
              </td>
           </tr>
@@ -289,6 +315,69 @@ const Table = () => {
 
       </Typography>
       </Popover>   
+
+
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+      <Typography sx={{ p: 2 }}>
+        <div className={styles.popover}>
+         <div className={styles.nameDiv}>
+          <div className={styles.poptitle}>ORGANIZATION</div>
+          <select name="cars" id="cars" className={styles.selectpop}>
+            <option value="volvo" disabled>Select</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+         </div>
+
+          <div className={styles.nameDiv}>
+            <div className={styles.poptitle}>USERNAME</div>
+            <input className={styles.inputpop} onChange={e => setUsername(e.target.value)} type='text' value={username}  placeholder='Username'/>
+          </div>
+
+          <div className={styles.nameDiv}>
+            <div className={styles.poptitle}>EMAIL</div>
+            <input className={styles.inputpop} onChange={e => setEmail(e.target.value)} type='text' value={email}  placeholder='Email'/>
+          </div>
+
+          <div className={styles.nameDiv}>
+            <div className={styles.poptitle}>DATE</div>
+            <input className={styles.inputpop} onChange={e => setDate(e.target.value)} type='date' value={date}  placeholder='Email'/>
+          </div>
+
+          <div className={styles.nameDiv}>
+            <div className={styles.poptitle}>Phone Number</div>
+            <input className={styles.inputpop} onChange={e => setPhoneNumber(e.target.value)} type='text' value={phoneNumber}  placeholder='Phone Number'/>
+          </div>
+
+          <div className={styles.nameDiv}>
+          <div className={styles.poptitle}>STATUS</div>
+          <select name="cars" id="cars" className={styles.selectpop}>
+            <option value="volvo" >Select</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+         </div>
+
+         <div className={styles.btnDiv}>
+           <button className={styles.btnOne}>Reset</button>
+           <button className={styles.btnTwo}>Filter</button>
+         </div>
+        </div>
+
+      </Typography>
+      </Popover>  
+
 
         </div>
      </div>
