@@ -202,17 +202,17 @@ const Table = () => {
             <div className={dropstyles.dropdownContentvvv}>
                  <a onClick={()=>viewDetails(user)} style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
                     <img src={View} style={{height:'17px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>View Details</div>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.8em'}}>View Details</div>
                  </a>
 
                  <a style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
                     <img src={Blacklist} style={{height:'17px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>Blacklist User</div>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.8em'}}>Blacklist User</div>
                  </a>
 
                  <a style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
                     <img src={Activate} style={{height:'17px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>Activate User</div>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.8em'}}>Activate User</div>
                  </a>
             </div>
         </div>
