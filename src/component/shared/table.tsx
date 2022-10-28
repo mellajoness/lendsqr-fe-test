@@ -200,19 +200,19 @@ const Table = () => {
       <Typography sx={{ p: 2 }}>
         <div className={styles.popoverTwo}>
             <div className={dropstyles.dropdownContentvvv}>
-                 <a onClick={()=>viewDetails(user)} style={{display:'flex',alignItems:'center',padding:'0.6em',cursor:'pointer'}}>
+                 <a onClick={()=>viewDetails(user)} style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
                     <img src={View} style={{height:'17px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359'}}>View Details</div>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>View Details</div>
                  </a>
 
-                 <a style={{display:'flex',alignItems:'center',padding:'1em',cursor:'pointer'}}>
+                 <a style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
                     <img src={Blacklist} style={{height:'17px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359'}}>Blacklist User</div>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>Blacklist User</div>
                  </a>
 
-                 <a style={{display:'flex',alignItems:'center',padding:'1em',cursor:'pointer'}}>
-                    <img src={Activate} style={{height:'20px'}}/>
-                    <div style={{paddingLeft:'1em',color:'#218359'}}>Activate User</div>
+                 <a style={{display:'flex',alignItems:'center',padding:'0.5em',cursor:'pointer'}}>
+                    <img src={Activate} style={{height:'17px'}}/>
+                    <div style={{paddingLeft:'1em',color:'#218359',fontSize:'0.9em'}}>Activate User</div>
                  </a>
             </div>
         </div>
