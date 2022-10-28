@@ -191,6 +191,7 @@ const Table = () => {
         id={id2}
         open={open2}
         anchorEl={anchorE2}
+        elevation={1}
         onClose={handleClose2}
         anchorOrigin={{
           vertical: 'bottom',
